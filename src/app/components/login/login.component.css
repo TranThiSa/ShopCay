@@ -1,0 +1,20 @@
+.bg__content{
+    margin-top: 7%;
+    background-color: #fff;
+    width: 80%;
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+
+}
+
+.text__title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text__parent{
+    text-decoration: none;
+    font-size: 16px;
+}

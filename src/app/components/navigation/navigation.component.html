@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg bg__navbar">
+  <div class="container px-4 px-lg-5 ">
+    <a class="navbar-brand nav__text" href="#!">Caygiong</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+        <li class="nav-item "><a class="nav-link active" aria-current="page" [routerLink]="['/home']" routerLinkActive="router-link-active" ><fa-icon [icon]="faHome" class="nav__icon"></fa-icon><span class="nav__text"> Home</span></a></li>
+        <li class="nav-item"><a class="nav-link nav__text" [routerLink]="['/product']" ><fa-icon [icon]="faTree" class="nav__icon"></fa-icon> Product</a></li>
+        <li class="nav-item"><a class="nav-link nav__text" [routerLink]="['/contact']" ><fa-icon [icon]="faAt" class="nav__icon"></fa-icon> Contact</a></li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li ngbDropdown class="nav-item dropdown d-inline-block"  *ngIf="auth.isLogin">
+          <a class="nav-link nav__text"  id="navbarDropdown" type="button" ngbDropdownToggle aria-haspopup="true" aria-expanded="false">
+            <fa-icon [icon]="faUser" class="nav__icon"></fa-icon> {{username}}
+          </a>
+          <div ngbDropdownMenu aria-labelledby="navbarDropdown" class="dropdown__menu">
+            <a ngbDropdownItem href="#" >Profile </a>
+            <a ngbDropdownItem type="button" (click)="signOut()">Sign Out</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link"  *ngIf="auth.isLogin" ><span class="nav__text"></span></a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/login']"  *ngIf="!auth.isLogin" ><fa-icon [icon]="faUser" class="nav__icon"></fa-icon><span class="nav__text"> Sign In</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><fa-icon [icon]="faCart" class="nav__icon"></fa-icon></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,65 @@
+<div class="col-12 bg__content py-3 px-4">
+  <div class="row">
+    <div class="col-12 bg__title">
+      <p class="mt-3"><fa-icon [icon]="faSearch" class="nav__icon"></fa-icon> SEARCH</p>
+    </div>
+    <div class="col-12 filter">
+      <ul>
+        <li>
+          <div class="form-group btn__search">
+            <input type="text" class="form-control" id="inputAddress" placeholder="Tìm kiếm">
+            <div class="btn btn-primary mt-2">Search</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="col-12 bg__content py-3 px-4 mt-3">
+  <div class="row">
+    <div class="col-12 bg__title">
+      <p class="mt-3"><fa-icon [icon]="faFilter" class="nav__icon"></fa-icon> FILTER</p>
+    </div>
+    <div class="col-12 filter">
+      <ul>
+        <li>
+          <div class="form-group">
+            <label for="inputState">Sản phẩm:</label>
+            <select id="inputState" class="form-control mt-2">
+              <option selected>Mới nhất</option>
+              <option>...</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="form-group mt-3">
+            <label for="inputState">Loại cây:</label>
+            <select id="inputState" class="form-control mt-2">
+              <option selected>Tất cả</option>
+              <option>...</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="form-group mt-3">
+            <label for="inputState">Giá:</label>
+            <select id="inputState" class="form-control mt-2">
+              <option selected>Giảm dần</option>
+              <option>...</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="form-group mt-3">
+            <label for="inputState">Quốc gia:</label>
+            <select id="inputState" class="form-control mt-2">
+              <option selected>Việt Nam</option>
+              <option>...</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

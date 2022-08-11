@@ -1,0 +1,11 @@
+.bg__info{
+    background-color: #1f2333;
+}
+
+.title__section{
+    padding-left: 17px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #2f3341;
+}

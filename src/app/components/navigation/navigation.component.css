@@ -1,0 +1,30 @@
+.bg__navbar{
+    background-color: #14700c;
+}
+
+.nav__text{
+    color: #e7f8fc;
+    font-weight: 600;
+    font-family:'tahoma';
+}
+
+.nav__icon{
+    color: #1dbb00;
+    margin-top: 400px;
+}
+
+
+.navbar-nav li:hover{
+    line-height: 10px;
+    border-bottom: 2px solid #2bbb1d;
+}
+
+.dropdown__menu{
+    margin-top: 12px;
+    line-height: 23px;
+}
+
+.dropdown__menu:hover{
+    margin-top: 13px;
+    line-height: 23px;
+}

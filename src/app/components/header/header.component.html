@@ -1,0 +1,55 @@
+<div class="container px-4 px-lg-5">
+  <div class="text-white py-3">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-3 bg_menu text-black ">
+          <div class="col-12 title__section px-4">
+            <P>
+              <fa-icon [icon]="faList" class="nav__icon"></fa-icon> MENU
+            </P>
+          </div>
+          <div class="col-12">
+            <ul class="menu_list">
+              <li class="menu_list_item"><a href="">CÂY ĂN TRÁI</a></li>
+              <li class="menu_list_item"><a href="">CÂY CẢNH</a></li>
+              <li class="menu_list_item"><a href="">CÂY HOA LEO</a></li>
+              <li class="menu_list_item"><a href="">CÂY GIỐNG</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-8 text-center bg_banner">
+          <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[0]" alt="Random first slide" class="img">
+              </div>
+              <div class="carousel-caption">
+                <h3>Xương rồng cao</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[1]" alt="Random second slide" class="img">
+              </div>
+              <div class="carousel-caption">
+                <h3>Hoa lan cảnh</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[2]" alt="Random third slide" class="img">
+              </div>
+              <div class="carousel-caption">
+                <h3>Chậu xương rồng</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

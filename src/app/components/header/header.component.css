@@ -1,0 +1,38 @@
+.img{
+     width: 600px;
+    height: 400px; 
+}
+
+.bg_banner{
+    background-color: #dedede;
+    fill-opacity: 0.5;
+}
+
+.bg_menu{
+    background-color: #fff;
+}
+
+.menu_list{
+    list-style-type: none;
+}
+
+.menu_list_item{
+    border-bottom: 2px solid #14700c;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.menu_list .menu_list_item a{
+    text-decoration: none;
+}
+
+.title__section{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 37px;
+    color: #fff;
+    border: none;
+    width: 100%;
+    background:#14700c;
+}
